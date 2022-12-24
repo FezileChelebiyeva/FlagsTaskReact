@@ -1,0 +1,42 @@
+#header {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 82px;
+  .logo {
+    h1 {
+      font-weight: 800;
+      font-size: 24px;
+      color: #111517;
+      @media only screen and (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo-dark-mode {
+      width: 15px;
+      height: 15px;
+      margin-bottom: 3px;
+    }
+    .dark-mode-btn {
+      width: 80px;
+      height: 22px;
+      font-size: 13px;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      cursor: pointer;
+    }
+  }
+}
