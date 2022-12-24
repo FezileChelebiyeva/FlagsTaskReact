@@ -1,21 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./index.scss";
-const SearchComp = ({ data }) => {
+import axios from "axios";
+
+const SearchComp = ({ setData }) => {
+  const BASE_URL = "https://restcountries.com/v2/all";
+
+  const [countries, setCountries] = useState([]);
+  useEffect(() => {
+    axios.get(BASE_URL).then((data) => setCountries(data.data));
+  }, []);
 
   const searchCountry = (e) => {
-    let newData = data.filter((element) =>
+    let newData = countries.filter((element) =>
       element.name
         .toLocaleLowerCase()
         .includes(e.target.value.toLocaleLowerCase())
     );
-    console.log(newData);
+    setData(newData);
   };
 
   const filterByRegion = (e) => {
-    let newDataRegion = data.filter((element) =>
+    let newDataRegion = countries.filter((element) =>
       element.region.includes(e.target.value)
     );
-    console.log(newDataRegion);
+    setData(newDataRegion);
   };
 
   return (

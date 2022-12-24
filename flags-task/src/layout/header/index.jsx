@@ -1,9 +1,8 @@
 import React from "react";
 import "./index.scss";
-import logoDarkMode from "../../assets/images/Path.svg";
-const Header = () => {
+const Header = ({ isDarkMode, setIsDarkMode }) => {
   const handleDarkMode = () => {
-    console.log("salam");
+    setIsDarkMode(!isDarkMode);
   };
   return (
     <header id="header">
@@ -11,7 +10,7 @@ const Header = () => {
         <h1>Where in the world?</h1>
       </div>
       <div>
-        <img className="logo-dark-mode" src={logoDarkMode} alt="darkmode" />
+      <i className="fa-regular fa-moon"></i>
         <button onClick={() => handleDarkMode()} className="dark-mode-btn">
           {" "}
           Dark Mode

@@ -1,0 +1,109 @@
+#details-part {
+  div {
+    .backBtn {
+      width: 136px;
+      height: 40px;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
+      border-radius: 6px;
+      margin: 90px 25px 50px 10px;
+      cursor: pointer;
+      .fa-solid {
+        margin-right: 10px;
+      }
+    }
+    .card-info {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .image {
+        img {
+          width: 560px;
+          height: 420px;
+          border-radius: 5px;
+          @media only screen and (max-width: 768px) {
+            width: 300px;
+            height: 270px;
+          }
+        }
+      }
+      .info-part {
+        // margin-top: 30px;
+
+        h3 {
+          font-weight: 800;
+          font-size: 32px;
+          //   margin-left: 10px;
+          // @media only screen and (max-width: 768px) {
+            margin-left: 60px;
+          // }
+        }
+        .info {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 23px;
+          margin-left: 60px;
+
+          .left {
+            p {
+              .name {
+                font-weight: 600;
+                font-size: 16px;
+              }
+              .value {
+                font-weight: 300;
+                font-size: 16px;
+              }
+            }
+          }
+          .right {
+            p {
+              .name {
+                font-weight: 600;
+                font-size: 16px;
+              }
+              .value {
+                font-weight: 300;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .info-footer {
+      margin-left: 60px;
+      margin-top: 50px;
+
+      span {
+        font-weight: 600;
+        font-size: 16px;
+        @media only screen and (max-width: 768px) {
+            display: block;
+            margin-bottom: 20px;
+            // margin-left: 60px;
+          }
+      }
+    span{
+      button {
+        width: 95px;
+        box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.104931);
+        border-radius: 2px;
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        margin: 0 10px;
+        font-size: 14px;
+        padding: 5px;
+      }
+    }
+    }
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 30px;
+    }
+  }
+}

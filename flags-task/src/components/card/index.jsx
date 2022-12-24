@@ -9,7 +9,7 @@ const CardComp = ({ data }) => {
     <div className="card-comp">
       {data.map((element) => {
         return (
-          <Link to={element.name} key={uid(element)}>
+          <Link to={`/details-page/${element.name}`} key={uid(element)}>
             <div className="card-col">
               <div className="cards">
                 <img

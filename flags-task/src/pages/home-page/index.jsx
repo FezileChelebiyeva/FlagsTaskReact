@@ -14,8 +14,7 @@ const HomePage = () => {
 
   return (
     <>
-      <Link to={"/"}></Link>
-      <SearchComp data={data} />
+      <SearchComp data={data} setData={setData}/>
       <CardComp data={data} />
     </>
   );

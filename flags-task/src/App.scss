@@ -1,0 +1,71 @@
+#root {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.App {
+  background-color: #fafafa;
+  padding: 50px;
+  font-family: "Nunito Sans", sans-serif;
+}
+.Dark {
+  background-color: #202c36;
+  padding: 50px;
+  font-family: "Nunito Sans", sans-serif;
+  #header {
+    background: #2b3844;
+    .logo {
+      h1 {
+        color: #FFFFFF;
+      }
+    }
+    div {
+      .fa-regular{
+        color: #FFFFFF;
+      }
+      .dark-mode-btn {
+        color: #FFFFFF;
+      }
+    }
+  }
+  .search-filter {
+    .input-search {
+      .fa-solid {
+        color: #FFFFFF;
+      }
+      input {
+        background: #2b3844;
+        color: #FFFFFF;
+      }
+    }
+    .filter-region {
+      select {
+        background-color: #2b3844;
+        color: #FFFFFF;
+      }
+    }
+  }
+  .card-comp {
+    .card-col {
+      .cards {
+        background: #2b3844;
+        color: #FFFFFF;
+      }
+    }
+  }
+#details-part {
+  color: #FFFFFF;
+  div{
+    .backBtn{
+      color: white;
+      .fa-solid{
+        color: #FFFFFF;
+      }
+    }
+    .info-footer{
+      button{
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+}
