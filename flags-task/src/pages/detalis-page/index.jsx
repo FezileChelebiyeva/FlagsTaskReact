@@ -33,7 +33,7 @@ const DetailsPage = () => {
                     <p>
                       <span className="name">Native Name:</span>{" "}
                       <span className="value">
-                        {element.nativeName?.swe?.common}
+                        {Object.values(element.name.nativeName)[0].common}
                       </span>
                     </p>
                     <p>
@@ -60,11 +60,13 @@ const DetailsPage = () => {
                     </p>
                     <p>
                       <span className="name">Currencies:</span>{" "}
-                      <span className="value">{element.capital}</span>
+                      <span className="value">{Object.values(element.currencies)[0].name}</span>
                     </p>
                     <p>
                       <span className="name">Languages:</span>{" "}
-                      <span className="value">{element.capital}</span>
+                      {Object.values(element.languages).map((el) => {
+                        return <span key={el} className="value">, {el}</span>;
+                      })}
                     </p>
                   </div>
                 </div>
