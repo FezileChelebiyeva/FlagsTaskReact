@@ -30,22 +30,17 @@
         }
       }
       .info-part {
-        // margin-top: 30px;
-
         h3 {
           font-weight: 800;
           font-size: 32px;
-          //   margin-left: 10px;
-          // @media only screen and (max-width: 768px) {
             margin-left: 60px;
-          // }
+          
         }
         .info {
           display: flex;
           justify-content: space-between;
           margin-top: 23px;
           margin-left: 60px;
-
           .left {
             p {
               .name {
@@ -83,7 +78,6 @@
         @media only screen and (max-width: 768px) {
             display: block;
             margin-bottom: 20px;
-            // margin-left: 60px;
           }
       }
     span{
@@ -102,7 +96,6 @@
     }
     @media only screen and (max-width: 768px) {
       flex-direction: column;
-      align-items: center;
       row-gap: 30px;
     }
   }

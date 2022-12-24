@@ -65,7 +65,7 @@ const DetailsPage = () => {
                     <p>
                       <span className="name">Languages:</span>{" "}
                       {Object.values(element.languages).map((el) => {
-                        return <span key={el} className="value">, {el}</span>;
+                        return <span key={el} className="value">{el}, </span>;
                       })}
                     </p>
                   </div>
