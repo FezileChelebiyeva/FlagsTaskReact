@@ -19,9 +19,12 @@ const DetailsPage = () => {
       {data.map((element) => {
         return (
           <div key={element}>
+            <div className="btn">
+
             <button className="backBtn" onClick={() => navigate(-1)}>
               <i className="fa-solid fa-arrow-left-long"></i> Back
             </button>
+            </div>
             <div className="card-info">
               <div className="image">
                 <img src={element.flags.png} alt="flagimage" />

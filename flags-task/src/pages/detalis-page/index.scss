@@ -1,5 +1,6 @@
 #details-part {
   div {
+   .btn{
     .backBtn {
       width: 136px;
       height: 40px;
@@ -14,6 +15,12 @@
         margin-right: 10px;
       }
     }
+     @media only screen and (max-width: 768px) {
+      display: flex;
+      // align-items: center;
+  }
+   }
+   
     .card-info {
       display: flex;
       justify-content: space-around;
@@ -34,13 +41,18 @@
           font-weight: 800;
           font-size: 32px;
             margin-left: 60px;
-          
+            @media only screen and (max-width: 768px) {
+             margin-left: 0;
+            }
         }
         .info {
           display: flex;
           justify-content: space-between;
           margin-top: 23px;
           margin-left: 60px;
+          @media only screen and (max-width: 768px) {
+            margin-left: 0;
+           }
           .left {
             p {
               .name {
@@ -75,28 +87,34 @@
       span {
         font-weight: 600;
         font-size: 16px;
-        @media only screen and (max-width: 768px) {
-            display: block;
-            margin-bottom: 20px;
-          }
+        
+      }
+      @media only screen and (max-width: 768px) {
+        margin-left: 0;
+        span{
+          display: block;
+        margin-bottom: 20px;
+        }
       }
     span{
       button {
-        width: 95px;
         box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.104931);
         border-radius: 2px;
         background-color: transparent;
         border: 0;
         outline: 0;
         margin: 0 10px;
-        font-size: 14px;
         padding: 5px;
+       margin-top: 10px;
       }
+    
     }
     }
     @media only screen and (max-width: 768px) {
       flex-direction: column;
+      align-items: flex-start;
       row-gap: 30px;
+      margin-left: 0;
     }
   }
 }

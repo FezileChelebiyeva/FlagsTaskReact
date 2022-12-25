@@ -1,71 +1,89 @@
-#root {
-  max-width: 1400px;
-  margin: 0 auto;
-}
+// #root {
+//   max-width: 1400px;
+//   margin: 0 auto;
+// }
+
 .App {
   background-color: #fafafa;
-  padding: 50px;
+  // padding: 50px;
   font-family: "Nunito Sans", sans-serif;
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+  }
 }
+
 .Dark {
   background-color: #202c36;
-  padding: 50px;
+  // padding: 50px;
   font-family: "Nunito Sans", sans-serif;
-  #header {
-    background: #2b3844;
-    .logo {
-      h1 {
-        color: #FFFFFF;
-      }
-    }
-    div {
-      .fa-regular{
-        color: #FFFFFF;
-      }
-      .dark-mode-btn {
-        color: #FFFFFF;
-      }
-    }
-  }
-  .search-filter {
-    .input-search {
-      .fa-solid {
-        color: #FFFFFF;
-      }
-      input {
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+    #header {
+      .header {
         background: #2b3844;
-        color: #FFFFFF;
+        .logo {
+          h1 {
+            color: #ffffff;
+          }
+        }
+        div {
+          .fa-regular {
+            color: #ffffff;
+          }
+          .dark-mode-btn {
+            color: #ffffff;
+          }
+        }
       }
     }
-    .filter-region {
-      select {
-        background-color: #2b3844;
-        color: #FFFFFF;
+    .search-filter {
+      .input-search {
+        .fa-solid {
+          color: #ffffff;
+        }
+        input {
+          background: #2b3844;
+          color: #ffffff;
+        }
       }
+      .filter-region {
+        select {
+          background-color: #2b3844;
+          color: #ffffff;
+        }
+      }
+    }
+    .card-comp {
+      .card-col {
+        .cards {
+          background: #2b3844;
+          color: #ffffff;
+        }
+      }
+    }
+    #details-part {
+      color: #ffffff;
+      div {
+        .backBtn {
+          color: white;
+          .fa-solid {
+            color: #ffffff;
+          }
+        }
+        .info-footer {
+          button {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .spindiv {
+      background-color: #202c36;
+      
     }
   }
-  .card-comp {
-    .card-col {
-      .cards {
-        background: #2b3844;
-        color: #FFFFFF;
-      }
-    }
-  }
-#details-part {
-  color: #FFFFFF;
-  div{
-    .backBtn{
-      color: white;
-      .fa-solid{
-        color: #FFFFFF;
-      }
-    }
-    .info-footer{
-      button{
-        color: #FFFFFF;
-      }
-    }
-  }
-}
 }

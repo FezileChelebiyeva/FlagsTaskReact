@@ -6,15 +6,16 @@ import DetailsPage from "./pages/detalis-page";
 import { useState } from "react";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  const [isDarkMode, setIsDarkMode] = useState(false);
   return (
     <div className={!isDarkMode ? "App" : "Dark"}>
-      <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/details-page/:name" element={<DetailsPage />} />
-      </Routes>
+      <div className="container">
+        <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/details-page/:name" element={<DetailsPage />} />
+        </Routes>
+      </div>
     </div>
   );
 }

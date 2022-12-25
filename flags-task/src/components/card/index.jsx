@@ -3,9 +3,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { uid } from "react-uid";
 import "./index.scss";
 import { Link } from "react-router-dom";
+import { Spin } from "antd";
 
-const CardComp = ({ data }) => {
-  return (
+const CardComp = ({ data, spinStatus }) => {
+  return !spinStatus ? (
+    <div className="spindiv">
+      <Spin className="spin" tip="Loading" size="large">
+        <div className="content" />
+      </Spin>
+    </div>
+  ) : (
     <div className="card-comp">
       {data.map((element) => {
         return (

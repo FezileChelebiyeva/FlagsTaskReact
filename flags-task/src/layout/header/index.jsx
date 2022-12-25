@@ -6,15 +6,17 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
   };
   return (
     <header id="header">
-      <div className="logo">
-        <h1>Where in the world?</h1>
-      </div>
-      <div>
-      <i className="fa-regular fa-moon"></i>
-        <button onClick={() => handleDarkMode()} className="dark-mode-btn">
-          {" "}
-          Dark Mode
-        </button>
+      <div className="header">
+        <div className="logo">
+          <h1>Where in the world?</h1>
+        </div>
+        <div>
+          <i className="fa-regular fa-moon"></i>
+          <button onClick={() => handleDarkMode()} className="dark-mode-btn">
+            {" "}
+            Dark Mode
+          </button>
+        </div>
       </div>
     </header>
   );
