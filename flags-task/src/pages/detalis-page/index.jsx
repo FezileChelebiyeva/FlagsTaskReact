@@ -20,10 +20,9 @@ const DetailsPage = () => {
         return (
           <div key={element}>
             <div className="btn">
-
-            <button className="backBtn" onClick={() => navigate(-1)}>
-              <i className="fa-solid fa-arrow-left-long"></i> Back
-            </button>
+              <button className="backBtn" onClick={() => navigate(-1)}>
+                <i className="fa-solid fa-arrow-left-long"></i> Back
+              </button>
             </div>
             <div className="card-info">
               <div className="image">
@@ -63,25 +62,29 @@ const DetailsPage = () => {
                     </p>
                     <p>
                       <span className="name">Currencies:</span>{" "}
-                      <span className="value">{Object.values(element.currencies)[0].name}</span>
+                      <span className="value">
+                        {Object.values(element.currencies)[0].name}
+                      </span>
                     </p>
                     <p>
                       <span className="name">Languages:</span>{" "}
                       {Object.values(element.languages).map((el) => {
-                        return <span key={el} className="value">{el}, </span>;
+                        return (
+                          <span key={el} className="value">
+                            {el},{" "}
+                          </span>
+                        );
                       })}
                     </p>
                   </div>
                 </div>
                 <div className="info-footer">
                   <span>Border Countries: </span>
-                  {element.borders?.map((el) => {
-                    return (
-                      <span key={el}>
-                        <button>{el}</button>
-                      </span>
-                    );
-                  })}
+                  <span>
+                    {element.borders?.map((el) => {
+                      return <button key={el}>{el}</button>;
+                    })}
+                  </span>
                 </div>
               </div>
             </div>

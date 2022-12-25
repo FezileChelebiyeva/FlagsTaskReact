@@ -9,8 +9,8 @@ function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   return (
     <div className={!isDarkMode ? "App" : "Dark"}>
-      <div className="container">
         <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      <div className="container">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/details-page/:name" element={<DetailsPage />} />

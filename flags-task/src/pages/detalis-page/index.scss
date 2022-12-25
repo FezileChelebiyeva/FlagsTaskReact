@@ -1,26 +1,39 @@
 #details-part {
   div {
-   .btn{
-    .backBtn {
-      width: 136px;
-      height: 40px;
-      border: 0;
-      outline: 0;
-      background: transparent;
-      box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
-      border-radius: 6px;
-      margin: 90px 25px 50px 10px;
-      cursor: pointer;
-      .fa-solid {
-        margin-right: 10px;
+    .btn {
+      .backBtn {
+        width: 136px;
+        height: 40px;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
+        border-radius: 6px;
+        margin: 90px 0 50px 50px;
+        cursor: pointer;
+        .fa-solid {
+          margin-right: 10px;
+        }
+      }
+      @media only screen and (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+        .backBtn{
+        margin: 90px 0 50px 0;
+
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        display: flex;
+        align-items: center;
+        .backBtn{
+          margin: 90px 0 50px 0;
+  
+          }
+
       }
     }
-     @media only screen and (max-width: 768px) {
-      display: flex;
-      // align-items: center;
-  }
-   }
-   
+
     .card-info {
       display: flex;
       justify-content: space-around;
@@ -30,9 +43,13 @@
           width: 560px;
           height: 420px;
           border-radius: 5px;
+          @media only screen and (max-width: 1024px) {
+            width: 425px;
+            height: 250px;
+          }
           @media only screen and (max-width: 768px) {
-            width: 300px;
-            height: 270px;
+            width: 250px;
+            height: 220px;
           }
         }
       }
@@ -40,19 +57,16 @@
         h3 {
           font-weight: 800;
           font-size: 32px;
-            margin-left: 60px;
-            @media only screen and (max-width: 768px) {
-             margin-left: 0;
-            }
+
         }
         .info {
           display: flex;
           justify-content: space-between;
           margin-top: 23px;
-          margin-left: 60px;
+         
           @media only screen and (max-width: 768px) {
-            margin-left: 0;
-           }
+            display: flex;
+          }
           .left {
             p {
               .name {
@@ -77,44 +91,47 @@
               }
             }
           }
+         
         }
       }
     }
     .info-footer {
-      margin-left: 60px;
       margin-top: 50px;
 
       span {
         font-weight: 600;
         font-size: 16px;
-        
       }
       @media only screen and (max-width: 768px) {
-        margin-left: 0;
-        span{
+        span {
           display: block;
-        margin-bottom: 20px;
+          margin-bottom: 20px;
+          button {
+            display: block;
+          }
         }
       }
-    span{
-      button {
-        box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.104931);
-        border-radius: 2px;
-        background-color: transparent;
-        border: 0;
-        outline: 0;
-        margin: 0 10px;
-        padding: 5px;
-       margin-top: 10px;
+      span {
+        button {
+          box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.104931);
+          border-radius: 2px;
+          background-color: transparent;
+          border: 0;
+          outline: 0;
+          margin: 0 10px;
+          padding: 5px;
+          margin-top: 10px;
+        }
       }
-    
-    }
     }
     @media only screen and (max-width: 768px) {
       flex-direction: column;
-      align-items: flex-start;
       row-gap: 30px;
       margin-left: 0;
+    }
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column;
+      row-gap: 30px;
     }
   }
 }

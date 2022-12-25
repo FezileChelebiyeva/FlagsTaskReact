@@ -16,30 +16,30 @@
 
 .Dark {
   background-color: #202c36;
-  // padding: 50px;
   font-family: "Nunito Sans", sans-serif;
+  #header {
+    .header {
+      background: #2b3844;
+      .logo {
+        h1 {
+          color: #ffffff;
+        }
+      }
+      div {
+        .fa-regular {
+          color: #ffffff;
+        }
+        .dark-mode-btn {
+          color: #ffffff;
+        }
+      }
+    }
+  }
   .container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 5%;
-    #header {
-      .header {
-        background: #2b3844;
-        .logo {
-          h1 {
-            color: #ffffff;
-          }
-        }
-        div {
-          .fa-regular {
-            color: #ffffff;
-          }
-          .dark-mode-btn {
-            color: #ffffff;
-          }
-        }
-      }
-    }
+    
     .search-filter {
       .input-search {
         .fa-solid {
